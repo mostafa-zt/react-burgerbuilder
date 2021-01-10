@@ -5,7 +5,6 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import thunk from 'redux-thunk'
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 
 // import reducer from './store/reducer';
 import burgerBuilderReducer from './store/reducers/burgerBuilder';
@@ -34,4 +33,3 @@ const app = (
 );
 
 ReactDOM.render(app, document.getElementById('root'));
-registerServiceWorker();
