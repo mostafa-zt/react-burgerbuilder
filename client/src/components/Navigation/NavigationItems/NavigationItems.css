@@ -1,0 +1,13 @@
+.NavigationItems {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+}
+
+@media (max-width: 750px) {
+    .NavigationItems{
+        flex-flow: column;
+        margin-top: 80px;
+        padding: 0;
+    }
+}

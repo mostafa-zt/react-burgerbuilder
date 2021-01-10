@@ -1,0 +1,69 @@
+.OrderBox {
+  padding: 4px 10px;
+  background-color: #ea8541;
+  border-right: 5px solid #7d3306;
+  border-radius: 5px;
+  box-shadow: 2px 4px 10px #383535b8;
+  margin: 50px 0px;
+}
+.SummaryItem {
+  margin-bottom: 16px;
+  border-bottom: 2px solid #c35f23;
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 8px 0px;
+}
+.Summary_SubItem {
+  text-transform: capitalize;
+}
+.TotalPrice {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #612a0a;
+}
+.Amount {
+  font-size: 1.6rem;
+  color: #612a0a;
+  display: inline-block;
+  min-width: 50px;
+  text-align: center;
+}
+.SummarySubItem {
+  display: inline-block;
+  min-width: 165px;
+}
+.Price {
+  float: right;
+}
+.Header {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.Order_Info_Item {
+  width: 50%;
+  display: inline-block;
+  margin: 8px 0px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: #c35f23;
+}
+
+.Order_Info {
+  background-color: #d2d2d2;
+  border-radius: 5px;
+  padding: 10px 8px;
+  box-shadow: 2px 3px 17px #efd6b1d6;
+  border: 2px solid #c35f23;
+}
+
+@media (max-width: 750px) {
+  .Order_Info_Item {
+    width: 100%;
+  }
+}
+.FullWidth{
+    width: 100%;
+}

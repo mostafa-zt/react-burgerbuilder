@@ -1,0 +1,67 @@
+.BuildControl{
+    padding: 20px 10px;
+    background-color: #da9466;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-right: 5px solid #7d3306;
+    box-shadow: 2px 2px 10px #2d2b2bdb;
+}
+.TotalPrice{
+    font-size: 1.9rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+.TotalPrice::after{
+    content: '';
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+    width: 100%;
+    height: 4px;
+    background-color: #7f3608;
+}
+.OrderButton {
+    background-color: #7d3306;
+    outline: none;
+    cursor: pointer;
+    border: 3px solid transparent;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    box-shadow: 2px 2px 2px #966909d1;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 10px;
+    transition: ease-in 0.4s;
+}
+
+.OrderButton:hover, .OrderButton:active {
+    background-color :#e6803b;
+    border-color: #7d3306;
+    color: #141414;
+}
+
+.OrderButton:disabled {
+    background-color: #C7C6C6;
+    cursor: not-allowed;
+    border: 1px solid #ccc;
+    color: #888888;
+}
+
+.OrderButton:not(:disabled) {
+    animation: enable 0.3s linear;
+}
+
+@keyframes enable {
+    0% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

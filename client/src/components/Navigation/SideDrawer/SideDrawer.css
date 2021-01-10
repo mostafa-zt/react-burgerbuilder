@@ -1,0 +1,34 @@
+.SideDrawer {
+  position: fixed;
+  width: 70%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: -400px;
+  background-color: #e8bda3;
+  box-sizing: border-box;
+  z-index: 101;
+  transition: ease-in-out 0.5s;
+  opacity: 0;
+  box-shadow: 3px 0px 10px #353333c4;
+}
+
+.Open {
+  opacity: 1;
+  left: 0;
+}
+
+.Close {
+  opacity: 0;
+}
+
+@media (min-width: 751px) {
+  .MobileOnly {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  .DesktopOnly {
+    display: none;
+  }
+}

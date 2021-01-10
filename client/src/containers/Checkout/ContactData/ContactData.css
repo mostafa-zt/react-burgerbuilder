@@ -1,0 +1,88 @@
+.InputElement {
+  padding: 10px 10px;
+  outline: 0;
+  border: 2px solid #c35f23;
+  background-color: #e9c08a;
+  transition: all 0.3s;
+  font-style: normal;
+  font-family: inherit;
+  border-radius: 10px;
+  color: #0a0a0a;
+  box-shadow: 2px 2px 7px #6d2e08f0;
+  margin: 5px 0px;
+  width: 100%;
+}
+.InputElement:hover,
+.InputElement:active,
+.InputElement:focus {
+  background-color: #d2d2d2;
+  border-color: #763106;
+}
+.Invalid {
+  background-color: #e04328;
+}
+.ContactForm {
+  padding: 2px 10px;
+  background-color: #eae2e2;
+  border-radius: 5px;
+  margin: 30px 0px;
+  box-shadow: 2px 2px 15px #000000c2;
+}
+.HeaderForm {
+  text-align: center;
+  letter-spacing: 8px;
+  font-weight: bold;
+}
+.Button {
+  padding: 15px 25px;
+  margin: 20px 0;
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #612a0a;
+  transition: all 0.3s;
+  color: #080808;
+  font-family: inherit;
+  font-style: normal;
+  cursor: pointer;
+  outline: none;
+}
+.ButtonSucces {
+  background-color: #0fce0f;
+}
+.ButtonCancel {
+  background-color: #e2a7a7;
+}
+.Button:hover,
+.Button:active {
+  background-color: #d2d2d2;
+  color: #080808;
+}
+.ButtonSection {
+  text-align: center;
+}
+
+.MessageBox {
+  color: white;
+  padding: 10px 15px;
+  border-bottom: 5px solid #c35f23;
+  box-shadow: 2px 4px 15px #000000ad;
+  margin-bottom: 15px;
+}
+.Red {
+  background-color: red;
+}
+.Green {
+  background-color: #07660c;
+}
+.ErrorParam {
+  text-transform: capitalize;
+  margin-right: 10px;
+}
+.ErrorItem {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #eae2e2;
+}
+.MessageText {
+  display: inline-block;
+  font-size: 0.8rem;
+}

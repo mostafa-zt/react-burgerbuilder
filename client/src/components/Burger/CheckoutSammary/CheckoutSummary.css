@@ -1,0 +1,46 @@
+.Summary_SubItem {
+  text-transform: capitalize;
+}
+.SummaryItem {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #c35f23;
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.Header {
+  text-align: center;
+  letter-spacing: 2px;
+}
+.TotalPrice {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #612a0a;
+}
+.Button {
+  padding: 5px 25px;
+  margin: 5px 10px;
+  border-radius: 5px;
+  border: 2px solid #612a0a;
+  transition: all 0.3s;
+  color: #080808;
+  font-family: inherit;
+  font-style: normal;
+  cursor: pointer;
+  outline: none;
+}
+.ButtonSucces {
+  background-color: #0fce0f;
+}
+.ButtonCancel {
+  background-color: #e2a7a7;
+}
+.Button:hover,
+.Button:active {
+  background-color: #d2d2d2;
+  color: #080808;
+}
+.ButtonSection {
+  text-align: center;
+}

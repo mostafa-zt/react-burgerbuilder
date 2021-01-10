@@ -1,0 +1,92 @@
+.Toolbar {
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #c35f23;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 45px;
+  box-sizing: border-box;
+  z-index: 200;
+}
+.ToggleWrap {
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  float: left;
+
+  /*disable selection*/
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ToggleBar,
+.ToggleBar::before,
+.ToggleBar::after,
+.ToggleWrap.active .ToggleBar,
+.ToggleWrap.active .ToggleBar::before,
+.ToggleWrap.active .ToggleBar::after {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.ToggleBar {
+  width: 38px;
+  margin: 10px 0;
+  position: relative;
+  border-top: 6px solid #303030;
+  display: block;
+}
+.ToggleBar::before,
+.ToggleBar::after {
+  content: '';
+  display: block;
+  background: #303030;
+  height: 6px;
+  width: 38px;
+  position: absolute;
+  top: -16px;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: 13%;
+  -webkit-transform-origin: 13%;
+  transform-origin: 13%;
+}
+.ToggleBar::after {
+  top: 4px;
+}
+.ToggleWrap.active .ToggleBar {
+  border-top: 6px solid transparent;
+}
+.ToggleWrap.active .ToggleBar::before {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.ToggleWrap.active .ToggleBar::after {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+@media (min-width: 751px) {
+  .MobileOnly {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  .DesktopOnly {
+    display: none;
+  }
+  .Toolbar{
+    padding: 0 8px;
+  }
+}

@@ -1,0 +1,60 @@
+/* MOBILE MODE */
+@media (max-width: 750px) {
+  .NavigationItem {
+    display: block;
+    width: 100%;
+    padding: 20px 5px;
+    cursor: pointer;
+    border-bottom: 5px solid transparent;
+    transition: all 0.3s;
+    background-color: #7d3306;
+    border-bottom: 4px solid #d2d2d2;
+  }
+  .NavigationItem.Active,
+  .NavigationItem:hover {
+    background-color: #925128;
+  }
+  .NavigationItem.Active a {
+    color: #dfd9d9;
+  }
+  .NavigationItem a {
+    color: #0e0700;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    transition: all 0.3s;
+  }
+}
+
+/* DESKTOP MODE */
+@media (min-width: 751px) {
+  .NavigationItem {
+    margin: 0;
+    display: flex;
+    height: 100%;
+    width: auto;
+    align-items: center;
+    cursor: pointer;
+    background-color: #7d3306;
+  }
+
+  .NavigationItem .Active {
+    background-color: #7d3306;
+    border-bottom: 4px solid #d2d2d2;
+  }
+
+  .NavigationItem a {
+    color: white;
+    height: 100%;
+    padding: 16px 10px;
+    text-decoration: none;
+    border-bottom: 4px solid transparent;
+    border-bottom: 4px solid #d2d2d2;
+  }
+
+  .NavigationItem a:hover,
+  .NavigationItem a:active {
+    background-color: #925128;
+  }
+}
