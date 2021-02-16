@@ -102,7 +102,7 @@ module.exports = function (webpackEnv) {
         // css is located in `static/css`, use '../../' to locate index.html folder
         // in production `paths.publicUrlOrPath` can be a relative path
         options: paths.publicUrlOrPath.startsWith('.')
-          ? { publicPath: '../../' }
+          ? { publicPath: '/' }
           : {},
       },
       {
@@ -191,7 +191,7 @@ module.exports = function (webpackEnv) {
           // changing JS code would still trigger a refresh.
         ]
         : paths.appIndexJs,
-    output: {
+    output: { 
       // The build folder.
       path: isEnvProduction ? paths.appBuild : undefined,
       // Add /* filename */ comments to generated require()s in the output.
@@ -554,6 +554,9 @@ module.exports = function (webpackEnv) {
           ],
         },
       ],
+    },
+    devServer: {
+      historyApiFallback: true,
     },
     plugins: [
       // Generates an `index.html` file with the <script> injected.
