@@ -13,11 +13,6 @@ class Order extends Component {
         this.props.onClearBurgerBuilderState();
     }
 
-    // componentDidMount() {
-    //     console.log('componentDidMount PROPS ==>');
-    //     console.log(this.props);
-    // }
-
     render() {
         let orderItems = null;
         if (this.props.orderResult && this.props.orderResult.order) {
