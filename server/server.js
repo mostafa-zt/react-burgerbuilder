@@ -14,7 +14,7 @@ const app = express();
 mongoose.Promise = global.Promise;
 app.use(bodyParser.json());
 app.use(cookieParser());
-app.use(express.static('client/build'));
+app.use(express.static('client-app'));
 
 app.post('/api/order', checkOrder(), (req, res, next) => {
     const body = req.body;
@@ -76,7 +76,7 @@ app.get('/api/getorder', (req, res) => {
 
 // if (process.env.NODE_ENV === 'production') {
 app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client-app', 'index.html'));
+    res.sendFile(path.join(__dirname, '../client-app', 'index.html'));
 })
 // }
 
