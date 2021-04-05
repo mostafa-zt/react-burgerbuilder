@@ -1,6 +1,5 @@
 const express = require('express');
-const { check, validationResult, body } = require('express-validator');
-const bodyParser = require('body-parser');
+const { validationResult } = require('express-validator');
 const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
 const config = require('./config/config').get(process.env.NODE_ENV);
@@ -12,7 +11,7 @@ const Order = require('./models/order');
 const app = express();
 
 mongoose.Promise = global.Promise;
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(cookieParser());
 app.use(express.static('client-app'));
 
@@ -74,11 +73,11 @@ app.get('/api/getorder', (req, res) => {
     })
 });
 
-// if (process.env.NODE_ENV === 'production') {
-app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client-app', 'index.html'));
-})
-// }
+if (process.env.NODE_ENV === 'production') {
+    app.get('/*', (req, res) => {
+        res.sendFile(path.join(__dirname, '../client-app', 'index.html'));
+    })
+}
 
 const port = process.env.PORT || 3001;
 mongoose.connect(config.DATABASE)

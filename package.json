@@ -9,6 +9,9 @@
     "server": "nodemon server/server.js",
     "client": "npm run start --prefix client"
   },
+  "engines": {
+    "node": "15.2.0"
+  },
   "author": "mostafa",
   "license": "ISC",
   "dependencies": {

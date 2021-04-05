@@ -6,4 +6,4 @@ Technologies and frameworks:
 •	Express.js
 •	Mongoose ODM
 •	MongoDB
-• React (React, Redux)
+•   React (React, Redux)
